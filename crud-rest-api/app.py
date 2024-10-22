@@ -1,8 +1,7 @@
 """Flask App initialization file"""
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-
-db = SQLAlchemy()
+from config import db
+from blueprints.user_blueprint import user_bp
 
 
 def create_app():
@@ -14,9 +13,6 @@ def create_app():
 
     # Initialize the database
     db.init_app(app)
-
-    # Import and register blueprints here
-    from blueprints.user_blueprint import user_bp
     app.register_blueprint(user_bp)
 
     return app

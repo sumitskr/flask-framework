@@ -2,7 +2,7 @@
 from flask import Blueprint, request, jsonify
 from flask.views import MethodView
 from models.User import User
-from app import db
+from config import db
 
 # Define the blueprint
 user_bp = Blueprint('user_bp', __name__)
