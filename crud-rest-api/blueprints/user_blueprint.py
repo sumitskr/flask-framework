@@ -1,3 +1,4 @@
+"""User blueprint module"""
 from flask import Blueprint, request, jsonify
 from flask.views import MethodView
 from models.User import User

@@ -2,3 +2,4 @@
 .idea
 __pycache__
 venv
+crud-rest-api/blueprints/__pycache__/
